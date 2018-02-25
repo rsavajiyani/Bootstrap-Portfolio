@@ -1,90 +1,134 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <title>About | Ravi Savajiyani</title>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ravi Savajiyani | Full Stack Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
 
-</head>
+        <link href = "css/font-awesome.min.css" rel = "stylesheet">
+        <link href = "css/skeleton.css" rel = "stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+        <div class = "wrapper">
+                <div id = "intro" class = "container">
+                    <div id = "introWrap">
+                        <h1 id = "introName">Ravi Savajiyani</h1>
+                        <h3 id = "introInfo">Full Stack Developer</h3>
 
-<body>
-  
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Ravi Savajiyani</a>
-      </div>
+                        <a target = "_blank" class = "introAnchor" href = "https://github.com/rsavajiyani"><i title = "GitHub" class = "fa fa-github main_icon"></i></a>
+                        <a target="_blank" class="introAnchor" href="https://www.linkedin.com/in/rsavajiyani/"><i title="LinkedIn" class="fa fa-linkedin-square"></i></a>
+                        <a target="_blank" class="introAnchor" href="https://drive.google.com/file/d/1Hd5RSuY0JBWVymrpBeyeFyDPJ-SZKpsR/view?usp=sharing"><i title="Resume" class="fa fa-file-o"></i></a>
+                        
+                        <br>
+                        <i id = "introDownArrow" class = "fa fa-arrow-circle-down" title = "Projects"></i>
+                    </div>
+                </div><!--intro-->
+           <div id = "projectWrapper">
+                <h1 class = "projectTitle">Projects</h1>
+                <div class = "project container">
+                    <div class = "row">
+                        <div class = "projectInfo six columns">
+                            <h2 class = "projectHeader">Bamazon</h2>
+                            <h5 class = "projectTags">CLI Storefront</h5>
+                            <h5 class = "projectTech"> Node.js, MySQL</h5>
+                            <p class = "projectTextParagraph">
+                                Bamazon is a Back-end CLI shopping and management app. It has three different interfaces: customer, supervisor, and manager. 
+                            </p>
+                            <p class = "projectTextParagraph">
+                                It displays information from MySQL database, and runs in a Node.js environment.
+                            </p>
+                        </div><!--projectInfo-->
+                        <div class = "projectImage six columns">
+                            <div class = "projectImageWrap">
+                                <img class = "gallery" src = "img/bamazon.png" value = "img/bamazon.png">
+                            </div>
+                            <div class = "galleryChoiceWrap">
+                                <div class = "galleryAnchorWrap">
+                                    <a target = "_blank" href = "https://github.com/rsavajiyani/bamazon"><button class = "galleryAnchorButton">GitHub</button></a>
+        
+                                </div>
+                            </div>
+                        </div><!--projectImage-->
+                    </div><!--row-->
+                </div><!--project-->
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">About <span class="sr-only">(current)</span></a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <!--End navigation-->
+                <div class = "project container">
+                    <div class = "row">
+                        <div class = "projectInfo six columns">
+                            <h2 class = "projectHeader">LIRI</h2>
+                            <h5 class = "projectTags">CLI Language Interpretation and Recognition Interface</h5>
+                            <h5 class = "projectTech">Node.js, Spotify API, Twitter API, OMDB API</h5>
+                            <p class = "projectTextParagraph">
+                                A Node.js app that's like SIRI. Run in the command line, it takes in user parameters and returns pertinent data. 
+                            </p>
+                            <p class = "projectTextParagraph">
+                                The user can search for tweets, Spotify search results for a specific song, and get information about a movie title from OMDB.
+                            </p>
+                        </div><!--projectInfo-->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 well">
-        <div class="page-header">
-          <h1>About Me</h1>
-        </div>
-          <div class="row">
-            <div class="col-sm-4 col-md-4">
-              <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
-            </div>
-            <div class="col-sm-8 col-md-8">
-              <p>Marshmallow jelly souffl&eacute; pastry biscuit gummi bears tootsie roll tootsie roll gingerbread. Cotton candy muffin gingerbread fruitcake. Sweet roll souffl&eacute; topping wafer croissant oat cake gummi&nbsp;bears.</p>
+                        <div class = "projectImage six columns">
+                            <div class = "projectImageWrap">
+                                <img class = "gallery" src = "img/LIRI.png" value = "img/LIRI.png">
+                            </div>
+                            <div class = "galleryChoiceWrap">
+                                <div class = "galleryAnchorWrap">
+                                    <a target = "_blank" href = "https://github.com/rsavajiyani/liri"><button class = "galleryAnchorButton">GitHub</button></a>
+                                </div>
+                            </div>
+                        </div><!--projectImage-->
+                    </div><!--row-->
+                </div><!--project-->
 
-             <p>Jelly-o cheesecake dessert fruitcake ice cream brownie liquorice souffl&eacute;. Caramels biscuit gummi bears tiramisu chupa chups. Croissant macaroon cotton candy cake pudding.</p>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h2 class="panel-title">Connect with Me</h2>
-          </div>
-          <div class="panel-body">
-            <ul class="list-group list-inline">
-              <li class="list-group-item">     
-                <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-              </li>
-              <li class="list-group-item"><a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-              </li>
-                <li class="list-group-item"><a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End main content -->
+                <div class = "project container">
+                    <div class = "row">
+                        <div class = "projectInfo six columns">
+                            <h2 class = "projectHeader">Out And About</h2>
+                            <h5 class = "projectTags">Web Application</h5>
+                            <h5 class = "projectTech">ReactJS, NodeJS, Google Maps API, Google Places API, OpenWeather API, Bootstrap, HTML5, CSS3</h5>
+                            <p class = "projectTextParagraph">
+                                 Out and About is a web application that provides the user a map of local bars in a zip code they search. It also provides a snapshot of current weather conditions in that area, using the OpenWeather API.
+                            </p>
+                            <p class="projectTextParagraph">
+                                It uses the Google Maps and Google Places APIs to populate info-marker pins on each establishment. These info-markers include the establishment's name, address, whether or not it's currently open, and rating(out of 5) by other Google Users.
+                            </p>
+                        </div><!--projectInfo-->
+                        <div class = "projectImage six columns">
+                            <div class = "projectImageWrap">
+                                <img class = "gallery" src = "img/OutandAbout.png" value = "img/OutandAbout.png">
+                            </div>
+                             <div class = "galleryChoiceWrap">
+                                <div class = "galleryAnchorWrap">
+                                    <a target = "_blank" href = "https://github.com/Zertuk/financeCharts"><button class = "galleryAnchorButton">GitHub</button></a>
+                                    <a target="_blank" href="https://townsend2014.github.io/Enraged-Smokers1/"><button class="galleryAnchorButton">Demo</button></a>
+                                </div>
+                            </div>                            
+                        </div><!--projectImage-->
+                    </div><!--row-->
+                </div><!--project-->
 
-    <!-- Footer starts here. -->
-    <footer>
-      <div class="container">
-      Copyright &copy; 2017 Ravi Savajiyani
-    </div>
-      </div>
-    </footer>
-  </div>
+                <div id = "projectLightbox">
+                    <img id = "projectLightboxImage" src = ""></img>
+                </div>
 
-</body>
+            </div><!--projectWrapper-->
+        </div><!--wrapper-->
+
+        <footer>
+            <a target = "_blank" class = "introAnchor" href = "https://github.com/rsavajiyani"><i title = "GitHub" class = "fa fa-github main_icon"></i></a>
+            <a target = "_blank" class="introAnchor" href="https://www.linkedin.com/in/rsavajiyani/"><i title="LinkedIn" class="fa fa-linkedin-square"></i></a>
+            <a class="introAnchor" href="mailto:rsavaj@gmail.com"><i title="Contact Me" class="fa fa-envelope main_icon"></i></a>
+        </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
