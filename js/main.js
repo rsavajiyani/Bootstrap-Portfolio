@@ -6,7 +6,7 @@ $(document).ready(function() {
     	}, 750);
 	});	
 
-	//lightbox
+	//lightbox not working?!
 	$('.gallery').click(function() {
 		$('#projectLightbox').fadeIn('fast');
 		var	lightboxImage = $(this).attr('value');
