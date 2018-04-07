@@ -414,11 +414,6 @@ footer a {
     /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
 @media print {
     * {
         background: transparent !important;
@@ -440,10 +435,6 @@ footer a {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
@@ -457,7 +448,7 @@ footer a {
     }
 
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group; 
     }
 
     tr,
