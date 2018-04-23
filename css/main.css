@@ -1,6 +1,5 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-
 button,
 input,
 select,
@@ -12,7 +11,6 @@ html {
     font-size: 100%;
     line-height: 1.4;
 }
-
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -90,7 +88,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body, html {
+body,
+html {
     height: 100%;
     background-color: rgb(45, 147, 237);
     color: #FFFFFF;
@@ -127,9 +126,8 @@ button {
     color: white;
 }
 
-
 a:hover {
-    color: #0C9DB8;
+    color: rgb(255, 0, 0);
 }
 
 .projectImageWrap {
@@ -139,12 +137,11 @@ a:hover {
 
 .projectImageWrap:hover .projectImageButtons {
     display: block;
-
 }
 
 .projectImageWrap .projectImageButtons {
-    position:absolute;
-    display:none;
+    position: absolute;
+    display: none;
     top: 0%;
 }
 
@@ -155,8 +152,8 @@ a:hover {
 }
 
 .projectImageButtons:hover {
-    background-color: rgba(237,135,45, 0.8);
-    border-right: 1px solid rgba(237,135,45, 0.8);
+    background-color: rgba(237, 135, 45, 0.8);
+    border-right: 1px solid rgba(237, 135, 45, 0.8);
     transition: background-color 0.2s linear;
 }
 
@@ -171,7 +168,8 @@ a:hover {
     display: block;
 }
 
-footer, .wrapper:after {
+footer,
+.wrapper:after {
     height: 142px;
     font-size: 0.75rem;
     text-align: center;
@@ -205,6 +203,7 @@ footer a {
     font-size: 5rem;
     margin-bottom: 2%;
 }
+
 .introAnchor {
     font-size: 3rem;
     margin-right: 1%;
@@ -232,7 +231,6 @@ footer a {
     height: 100%;
     background-color: #f1f1f0;
     color: #4d4d4d;
-
 }
 
 .projectTitle {
@@ -285,14 +283,12 @@ footer a {
     font-family: 'Oxygen', sans-serif;
 }
 
-
 /*image gallery*/
 
 .gallery {
     max-height: 100%;
     max-width: 100%;
 }
-
 
 .galleryChoice {
     width: 40px;
@@ -312,7 +308,7 @@ footer a {
     display: none;
     top: 0;
     left: 0;
-    background-color: rgba(39,40,34,0.8);
+    background-color: rgba(39, 40, 34, 0.8);
     height: 100%;
     width: 100%;
     position: fixed;
@@ -321,6 +317,7 @@ footer a {
 }
 
 /* vertical center the lightbox image with pseudo element */
+
 #projectLightbox:before {
     content: ' ';
     display: inline-block;
@@ -364,7 +361,6 @@ footer a {
     }
 }
 
-
 @media only screen and (max-width: 550px) {
     #introName {
         font-size: 4rem;
@@ -407,70 +403,60 @@ footer a {
     }
 }
 
-@media print ,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important;
+        /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
-        display: table-header-group; 
+        display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     @page {
         margin: 0.5cm;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
